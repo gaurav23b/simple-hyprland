@@ -62,7 +62,7 @@ button:focus {
 }
 
 #shutdown:hover {
-    background-image: image(url("~/.config/assets/wlogout/assets/power-hover.png"), url("/usr/local/share/wlogout/icons/shutdown.png")); 
+    background-image: image(url("~/.config/assets/wlogout/assets/power-hover.png"), url("/usr/local/share/wlogout/icons/shutdown.png"));
     color: #11111b;
 }
 

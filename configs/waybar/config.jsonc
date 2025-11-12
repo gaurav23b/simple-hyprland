@@ -25,7 +25,7 @@
     "hyprland/window": {
         "format": "󰣇 {}"
     },
-    
+
     "hyprland/workspaces": {
         "disable-scroll": true,
         "all-outputs": true,
