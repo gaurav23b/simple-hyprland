@@ -25,6 +25,8 @@ run_command "pacman -S --noconfirm sddm && systemctl enable sddm.service" "Insta
 
 run_command "yay -S --sudoloop --noconfirm brave-bin" "Install Brave Browser" "yes" "no" 
 
+run_command "yay -S --sudoloop --noconfirm nwg-dock-hyprland" "Install macOS-like dock (Optional)" "yes" "no"
+
 run_command "pacman -S --noconfirm kitty" "Install Kitty (Recommended)" "yes"
 
 run_command "pacman -S --noconfirm nano" "Install nano" "yes"
