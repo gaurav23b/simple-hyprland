@@ -78,7 +78,7 @@ function run_command {
     else
         full_cmd="$cmd"
     fi
-    
+
     log_message "Attempting to run: $description"
     print_info "\nCommand: $full_cmd"
     if [[ "$ask_confirm" == "yes" ]]; then
@@ -90,7 +90,7 @@ function run_command {
     else
         print_info "\n$description"  # Echo what it's doing without confirmation
     fi
-    
+
     while ! eval "$full_cmd"; do
         print_error "Command failed."
         log_message "Command failed: $cmd"
@@ -106,7 +106,7 @@ function run_command {
             return 1
         fi
     done
-    
+
     print_success "$description completed successfully."
     log_message "$description completed successfully."
     return 0
@@ -135,7 +135,7 @@ function check_root {
         log_message "Script not run as root. Exiting."
         exit 1
     fi
-    
+
     # Store the original user for later use
     SUDO_USER=$(logname)
     log_message "Original user is $SUDO_USER"

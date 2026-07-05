@@ -9,11 +9,11 @@ source $BASE_DIR/scripts/installer/helper.sh
 log_message "Installation started for theming section"
 print_info "\nStarting theming setup..."
 
-run_command "pacman -S --noconfirm nwg-look" "Install nwg-look for GTK theme management" "yes" 
+run_command "pacman -S --noconfirm nwg-look" "Install nwg-look for GTK theme management" "yes"
 
 run_command "pacman -S --noconfirm qt5ct qt6ct kvantum" "Install Qt5, Qt6 Settings, and Kvantum theme engines" "yes"
 
-run_command "tar -xvf $BASE_DIR/assets/themes/Catppuccin-Mocha.tar.xz -C /usr/share/themes/" "Install Catppuccin Mocha GTK theme" "yes" 
+run_command "tar -xvf $BASE_DIR/assets/themes/Catppuccin-Mocha.tar.xz -C /usr/share/themes/" "Install Catppuccin Mocha GTK theme" "yes"
 
 run_command "tar -xvf $BASE_DIR/assets/icons/Tela-circle-dracula.tar.xz -C /usr/share/icons/" "Install Tela Circle Dracula icon theme" "yes"
 
